@@ -1,0 +1,23 @@
+{
+  "name": "in-between-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Commercial web-based In Between card gaming platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace apps/api run start:dev",
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:admin": "npm --workspace apps/admin run dev",
+    "build:api": "npm --workspace apps/api run build",
+    "build:web": "npm --workspace apps/web run build",
+    "build:admin": "npm --workspace apps/admin run build",
+    "db:migrate": "npm --workspace apps/api run db:migrate",
+    "lint:api": "npm --workspace apps/api run lint",
+    "lint:web": "npm --workspace apps/web run lint",
+    "lint:admin": "npm --workspace apps/admin run lint",
+    "test:api": "npm --workspace apps/api run test"
+  }
+}

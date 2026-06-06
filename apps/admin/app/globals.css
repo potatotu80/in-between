@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-slatebrand font-body text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 26%),
+    linear-gradient(180deg, #0f172a 0%, #0b1120 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.admin-panel {
+  @apply rounded-[28px] border border-white/10 bg-white/[0.04] shadow-soft backdrop-blur;
+}
